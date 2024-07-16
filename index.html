@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop for you</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1><marquee>SELECT YOUR CHOICE</marquee></h1>
+    <div class="tabs">
+        <button onclick="showCategory('men')" id="men-tab">MEN</button>
+        <button onclick="showCategory('women')" id="women-tab">WOMEN</button>
+        <button onclick="showCategory('kids')" id="kids-tab">KIDS</button>
+    </div>
+    <div id="men" class="products"></div>
+    <div id="women" class="products"></div>
+    <div id="kids" class="products"></div>
+    <script src="script.js"></script>
 </body>
 </html>
