@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded' , function() {
+document.addEventListener('DOMContentLoaded', function() {
     fetch('https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json')
     .then(response => response.json())
     .then(data => {
@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded' , function() {
                     card.className = 'product-card';
                     const discount = ((product.compare_at_price - product.price) / product.compare_at_price) * 100;
                     card.innerHTML = `
-                        <img src = " ${product.image}" alt="${product.title}">
+                        <img src="${product.image}" alt="${product.title}">
                         ${product.badge_text ? `<div class="badge">${product.badge_text}</div>` : ''}
                         <div class="product-info">
                             <div class="product-info-title">
-                                <h3>${product.title}</h3>
+                                <h3>${truncateText(product.title, 20)}</h3>
                                 <h5>${product.vendor}</h5>
                             </div>
                             <div class="product-info-priceTag">
@@ -28,12 +28,20 @@ document.addEventListener('DOMContentLoaded' , function() {
                         <button class="addToCart">Add to Cart</button>
                     `;
                     container.appendChild(card);
-                })
+                });
             }
         });
-        showCategory('men')
-    })
-})
+        showCategory('men');
+    });
+});
+
+function truncateText(text, limit) {
+    if (text.length > limit) {
+        return text.substring(0, limit) + '...';
+    } else {
+        return text;
+    }
+}
 
 function showCategory(category) {
     const categories = ['men', 'women', 'kids'];
@@ -45,9 +53,9 @@ function showCategory(category) {
                 element.style.display = 'flex';
                 tab.classList.add('active');
             } else {
-                element.style.display ='none';
+                element.style.display = 'none';
                 tab.classList.remove('active');
             }
         }
-    })
+    });
 }
