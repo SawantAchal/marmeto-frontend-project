@@ -28,8 +28,8 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
     sh
-    git clone https://github.com/yourusername/product-cards-project.git
-    cd product-cards-project
+    git clone https://github.com/SawantAchal/marmeto-frontend-project.git
+    cd marmeto-frontend-project
     
 
 2. Open index.html in your web browser.
