@@ -46,7 +46,7 @@ h1{
 }
 
 .product-card {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   margin: 10px;
   padding: 15px;
@@ -59,20 +59,36 @@ h1{
 .product-card img {
   max-width: 100%;
   border-radius: 5px;
+  height: 40vh;
 }
 
 .badge {
-  background-color: #f00;
-  color: #fff;
+  background-color: #888;
+  color: black;
+  font-weight: bold;
   padding: 5px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  left: 20px;
+  /* right: 1; */
   border-radius: 5px;
+  font-size: 12px
 }
 
 .product-info {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info-title{
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-info-priceTag{
+  display: flex;
+  justify-content: space-around;
 }
 
 .product-info p {
@@ -91,6 +107,16 @@ h1{
 .discount {
   color: #f00;
   font-weight: bold;
+}
+
+.addToCart{
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 3%;
 }
 
 @media (max-width: 767px) {

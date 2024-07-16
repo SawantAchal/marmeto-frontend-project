@@ -15,13 +15,17 @@ document.addEventListener('DOMContentLoaded' , function() {
                         <img src = " ${product.image}" alt="${product.title}">
                         ${product.badge_text ? `<div class="badge">${product.badge_text}</div>` : ''}
                         <div class="product-info">
-                            <p>${product.title}</p>
-                            <p>${product.vendor}</p>
-                            <p class="product-price">Rs ${product.price}</p>
-                            <p class="compare-at-price">Rs ${product.compare_at_price}</p>
-                            <p class="discount">${discount.toFixed(2)}% OFF</p>
+                            <div class="product-info-title">
+                                <h3>${product.title}</h3>
+                                <h5>${product.vendor}</h5>
+                            </div>
+                            <div class="product-info-priceTag">
+                                <p class="product-price">Rs ${product.price}</p>
+                                <p class="compare-at-price">Rs ${product.compare_at_price}</p>
+                                <p class="discount">${discount.toFixed(2)}% OFF</p>
+                            </div>
                         </div>
-                        <button>Add to Cart</button>
+                        <button class="addToCart">Add to Cart</button>
                     `;
                     container.appendChild(card);
                 })
