@@ -1,4 +1,4 @@
-# Product Cards Project
+# Shop For You
 
 This project is a simple product cards interface that allows users to select and view products based on categories such as Men, Women, and Kids. The project is built using HTML, CSS, and JavaScript.
 
