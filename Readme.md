@@ -1,56 +1,41 @@
-# Coding Assessment L-2 Code Submission Process with Boilerplate
+# Product Cards Project
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+This project is a simple product cards interface that allows users to select and view products based on categories such as Men, Women, and Kids. The project is built using HTML, CSS, and JavaScript.
 
-## Getting Started
+## Table of Contents
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+- [Project Description](#project-description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
 
-2. **Navigate to Project Directory:**
+## Project Description
 
-3. **Explore the Structure:**
-Take a moment to review the project structure:
+This project showcases a collection of products in different categories. Users can click on the category tabs (Men, Women, Kids) to view the respective products. Each product card displays the product image, title, vendor, price, compare-at price, discount, and an "Add to Cart" button.
 
-        project-root/
-        |-- index.html
-        |-- style.css
-        |-- script.js
-        |-- README.md
-- `index.html`: Main HTML file for your project.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for scripting logic.
-- `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
+## Features
 
-## Development and Testing
+- Category tabs to switch between Men, Women, and Kids products.
+- Dynamic loading of products using JavaScript and a JSON file.
+- Responsive design for better user experience on different devices.
+- Display of product details including price, discount, and vendor.
+- Badge text for special product offers.
 
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
+## Installation
 
+To run this project locally, follow these steps:
 
----
-## Updated Submission Guidelines
+1. Clone the repository:
 
-1. Fill out the form provided at [this link](https://forms.gle/MxuzmExHGXBh3hVk8).
-2. Provide the GitHub repository link of your project in the designated field.
-3. Share the hosted link of your project in the appropriate field.
+    sh
+    git clone https://github.com/yourusername/product-cards-project.git
+    cd product-cards-project
+    
 
+2. Open index.html in your web browser.
 
-## Important Notes
+## Usage
 
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Good luck! We look forward to reviewing your submission.
+- Open the index.html file in your web browser.
+- Click on the category tabs (Men, Women, Kids) to view products in each category.
+- Each product card shows the product image, title, vendor, price, compare-at price, discount, and an "Add to Cart" button.
