@@ -1,4 +1,4 @@
-# Shop For You
+# Marmeto Frontend Project
 
 This project is a simple product cards interface that allows users to select and view products based on categories such as Men, Women, and Kids. The project is built using HTML, CSS, and JavaScript.
 
