@@ -27,12 +27,14 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-    sh
     git clone https://github.com/SawantAchal/marmeto-frontend-project.git
+
+2. Navigate to the project directory
+   
     cd marmeto-frontend-project
     
 
-2. Open index.html in your web browser.
+3. Open index.html in your web browser.
 
 ## Usage
 
