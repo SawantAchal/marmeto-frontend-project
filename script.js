@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${product.badge_text ? `<div class="badge">${product.badge_text}</div>` : ''}
                         <div class="product-info">
                             <div class="product-info-title">
-                                <h3>${truncateText(product.title, 20)}</h3>
-                                <h5> &bull;${product.vendor}</h5>
+                                <h3>${truncateText(product.title, 17)}</h3>
+                                <h5 class="bullet"> &bull; ${product.vendor}</h5>
                             </div>
                             <div class="product-info-priceTag">
                                 <p class="product-price">Rs ${product.price}.00</p>
