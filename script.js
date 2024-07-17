@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="product-info">
                             <div class="product-info-title">
                                 <h3>${truncateText(product.title, 20)}</h3>
-                                <h5> . ${product.vendor}</h5>
+                                <h5> &bull;${product.vendor}</h5>
                             </div>
                             <div class="product-info-priceTag">
                                 <p class="product-price">Rs ${product.price}.00</p>
