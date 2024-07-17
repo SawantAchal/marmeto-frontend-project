@@ -73,14 +73,13 @@ h1 {
 }
 
 .badge {
-  background-color: #dadada;
+  background-color: white;
   color: black;
   font-weight: bold;
   padding: 5px;
   position: absolute;
   top: 20px;
-  left: 25px;
-  border-radius: 5px;
+  left: 40px;
   font-size: 12px;
 }
 
@@ -101,6 +100,7 @@ h1 {
 .product-info-priceTag {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .product-info p {
@@ -133,6 +133,31 @@ h1 {
 
 @media (max-width: 767px) {
   .product-card {
-      width: 100%;
+    width: 100%;
+    border: 1px solid grey;
   }
+
+  .product-card img{
+    width: 80%;
+    height: 60%;
+  }
+
+  .badge{
+    left: 60px;
+  }
+
+  .tabs {
+    background-color: transparent;
+  }
+}
+
+
+@media (min-width : 367px) {
+  .tabs {
+    width: 100%;
+    margin-left: 2vh;
+    align-items: center;
+  }
+
+
 }
