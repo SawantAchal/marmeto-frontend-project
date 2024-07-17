@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <h5> . ${product.vendor}</h5>
                             </div>
                             <div class="product-info-priceTag">
-                                <p class="product-price">Rs ${product.price}</p>
+                                <p class="product-price">Rs ${product.price}.00</p>
                                 <p class="compare-at-price">Rs ${product.compare_at_price}</p>
                                 <p class="discount">${discount.toFixed(2)}% OFF</p>
                             </div>
